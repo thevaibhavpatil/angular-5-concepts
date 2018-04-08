@@ -1,4 +1,4 @@
-# angular-universal-state-transfer-demo-v5
+# angular-5-concepts
 
 This projesct was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 

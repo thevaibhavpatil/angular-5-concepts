@@ -1,22 +1,34 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 import { AppComponent } from './app.component';
+import { GoogleMapComponent } from './google-map/google-map.component';
+import { AgmCoreModule } from '@agm/core';
+import { ScssComponent } from './scss/scss.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoogleMapComponent,
+    ScssComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'universal-demo-5'}),
+    BrowserModule.withServerTransition({ appId: 'universal-demo-5' }),
     HttpClientModule,
-    BrowserTransferStateModule
+    BrowserTransferStateModule,
+    MDBBootstrapModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCbqHASEVONoYUn7PZdM8TgdZlNw-oq5Ms'
+    }),
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
