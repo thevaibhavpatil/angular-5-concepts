@@ -7,15 +7,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { AgmCoreModule } from '@agm/core';
-import { ScssComponent } from './scss/scss.component';
 import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoogleMapComponent,
-    ScssComponent
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'universal-demo-5' }),
