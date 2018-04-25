@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { AgmCoreModule } from '@agm/core';
 import { AppRoutingModule } from './/app-routing.module';
+import { FixFooterAtBottomComponent } from './fix-footer-at-bottom/fix-footer-at-bottom.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    FixFooterAtBottomComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'universal-demo-5' }),

@@ -5,7 +5,8 @@ import { GoogleMapComponent } from './google-map/google-map.component';
 
 const routes: Routes = [
   { path: 'googlemap', component: GoogleMapComponent },
-  { path: 'scssexamples', loadChildren: 'app/scss-examples/scss-examples.module#ScssExamplesModule'}
+  { path: 'scssexamples', loadChildren: 'app/scss-examples/scss-examples.module#ScssExamplesModule'},
+  { path: 'httpinterceptor', loadChildren: 'app/http-interceptor/http-interceptor.module#HttpInterceptorModule'}
 ];
 @NgModule({
   imports: [

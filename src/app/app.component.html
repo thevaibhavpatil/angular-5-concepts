@@ -1,14 +1,15 @@
-<!-- <div style="text-align:center ">
-  <h1 class="slideInDown">
-    Welcome to {{title}}!
-  </h1>
-  <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Primary</button>
+<div class="container">
+    <div style="text-align:center">
+        <h1 class="slideInDown">Welcome to {{title}}!</h1>
+        <button
+            type="button"
+            class="btn btn-primary waves-light"
+            mdbRippleRadius
+        >
+            Primary
+        </button>
 
+    </div>
+    <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet> -->
-
-<div id="container">
-  <div id="header">header</div>
-  <div id="body">body</div>
-  <div id="footer">footer</div>
-</div>
+<app-fix-footer-at-bottom class="container"></app-fix-footer-at-bottom>
